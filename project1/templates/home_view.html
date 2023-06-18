@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{title}}   {{content}}</h1>
+<ul>{%for x in objlist%}</ul>
+<li>number is{{x}}</li>
+{% endfor %}
+<ul>{%for x in obj_queryset%}</ul>
+<h1>POST:{{x.id}}</h1>
+<li><a href="articles/{{x.id}}">{{x.title}}:</a><p>{{x.content}}</p></li>
+{% endfor %}
+{% endblock content%}
