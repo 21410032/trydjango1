@@ -51,7 +51,7 @@ def home_view(request,*args,**kwargs):
     "objlist":objlist,
     "title":obj.title,
     "content":obj.content,
-    "id":obj.id
+    "id":obj.id,
  }
  opt=get_template("home_view.html")
  Httpopt=opt.render(context=context)
