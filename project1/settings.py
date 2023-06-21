@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','django-insecure-_107ysq)k!#mo$%&8@248g
 DEBUG = str(os.environ.get('DEBUG')) == "1"
 ALLOWED_HOSTS = []
 if not DEBUG:
-    ALLOWED_HOSTS=[os.environ.get('ALLOWED_HOSTS')]
+    ALLOWED_HOSTS=['trydjango1.vercel.app']
 
 # Application definition
 
